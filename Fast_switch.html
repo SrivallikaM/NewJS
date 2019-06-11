@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./app1.css"/>
+    </head>
+<body>
+  
+    <div class="panel-box" >
+        <div style="height:35%">
+        
+                <label id="title"><b>Task Tracker</b></label>
+               
+                <label style="font-size:20px">v2.0</label>
+    </div>
+ 
+  <div class="container">
+
+        <div class="column1" >
+                <form >
+                        <br/><br/>
+                        <h3>Create Task</h3><br/><br/>
+                        <label><b>Task Name</b></label><button style="border-radius:50%;" data-tooltip="Only letters,numbers and # are allowed">Tooltip</button><br/>
+                        <input type="text" id="task" required pattern="[\w\s0-9#]+" /><br/>
+                        <label><b>Date</b></label><br/>
+                        <input type="date"  id="date" required /><br/>
+                        <label><b>Assigned To</b></label><br/>
+                        <input type="text" id="assigned" required pattern="^[a-zA-Z]+$"/><br/><br/>
+                        <input type="Submit"  id="sub" >
+                    </form>
+        </div>
+    
+        <div class="column2" >
+                <br/><br/>
+            <h3>Existing Tasks</h3>
+            
+            <table id="myTable" >
+            <tr id="0">
+                    <th>Task Name</th>
+                    <th>Date</th>
+                
+                    <th class="mSpace">Assigned To</th>
+            </tr>
+        </table>   
+            
+                
+                    
+                
+    </div>
+    </div>
+
+
+
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+
+<script src="./app1.js"></script>
+
+</body>
+</html>
